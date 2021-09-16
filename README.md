@@ -15,7 +15,7 @@ If you already have an OGN receiver, install the software provided here and enab
 
 ### OGN receiver characteristics
 
-| Characteristics | Value/description |
+| Characteristic | Value/description |
 |-----|-----|
 | Frequency | 868.8MHz |
 | Bandwidth | 2MHz, some 1MHz |
@@ -29,7 +29,22 @@ If you already have an OGN receiver, install the software provided here and enab
 | Timing accuracy | some miliseconds, to be possibly improved |
 | Demodulators | GFSK and LoRa, filtered envelope for the FRB |
 
+### Challenges
+#### Antenna(s) pattern
+OGN antennas receive signals basically on the horizon, this is where most of the aircraft are, thus for the FRB's we well can detect those on the horizon.
+This can still work, as we expect those signals to come from our Galaxy, thus the best time to listen is when the Galaxy is low on the horizon.
+
+#### Man-made noise
+868MHz is an ISM band thus is filled with man-made signals, the processing needs to filter this signals out.
+Still, after filtering, there are many pulse-like signals on the envelope, thus to get a confident FRB signal we need to correlate several receivers.
+Fortunately, the OGN network has already few thousands of such, thus if we just get a small fraction to work for the FRB we have a chance to find it.
+
+#### Sensitivity
+
+#### Timing accuracy
+
 ### Data processing for the FRB signal
 
 An OGN receiver normally detects and demodulates GFSK and LoRa signals of bandwidths 100-250kHz.
 For the purpose of FRB one needs to introduce a dedicated processing element which is sensitive to wideband pulses while being insensitive to the narrowband signals.
+
