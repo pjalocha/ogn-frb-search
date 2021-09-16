@@ -1,2 +1,3 @@
-# ogn-frb-search
-Fast Radio Burst search with Open Glider Network (OGN)
+This project is about searching for Fast Radio Burst with the Open Glider Network.
+
+The concept is along the lines of https://arxiv.org/abs/1701.01475
