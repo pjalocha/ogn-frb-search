@@ -8,7 +8,12 @@ This network should be sensitive enough to detect Fast Radio Bursts coming from 
 
 This project attempts to perform such a search; at this moment data from about 20 OGN ground receivers is being collected and stored for futher analysis.
 
-## OGN receiver characteristics
+## How to join
+If you already have an OGN receiver, install the software provided here and enable the FRB in the config file, otherwise install an OGN receiver first.
+
+## FRB reception
+
+### OGN receiver characteristics
 
 | Characteristics | Value/description |
 |-----|-----|
@@ -22,4 +27,9 @@ This project attempts to perform such a search; at this moment data from about 2
 | Receiver | RTLSDR, possibly with LNA and/or filter |
 | Noise Figure | 1dB (with LNA) 4dB (without LNA) |
 | Timing accuracy | some miliseconds, to be possibly improved |
+| Demodulators | GFSK and LoRa, filtered envelope for the FRB |
 
+### Data processing for the FRB signal
+
+An OGN receiver normally detects and demodulates GFSK and LoRa signals of bandwidths 100-250kHz.
+For the purpose of FRB one needs to introduce a dedicated processing element which is sensitive to wideband pulses while being insensitive to the narrowband signals.
