@@ -10,6 +10,7 @@ This project attempts to perform such a search; at this moment data from about 2
 
 ## How to join
 If you already have an OGN receiver, install the software provided here and enable the FRB in the config file, otherwise install an OGN receiver first.
+### Typical hardware required/recommended
 
 ## FRB reception
 
