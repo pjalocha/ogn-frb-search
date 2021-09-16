@@ -11,6 +11,13 @@ This project attempts to perform such a search; at this moment data from about 2
 ## How to join
 If you already have an OGN receiver, install the software provided here and enable the FRB in the config file, otherwise install an OGN receiver first.
 ### Typical hardware required/recommended
+| Element | Description/Remarks | est.price |
+|------|-----|----|
+| CPU | Raspberry PI 2, 3 or 4, 512MB RAM, case, power supply | 60 EUR |
+| RTLSDR | Silver stick from rtl-sdr.org | 27 USD |
+| Antenna | Collinear, 1-2m, 5-10dBi | 50-100 EUR |
+| LNA | Uputronics with Bias-T, not required, but highly recommended | 40 GBP |
+| antenna feeder | low-loss coax, less critical when LNA at the antenna | |
 
 ## FRB reception
 
@@ -26,7 +33,7 @@ If you already have an OGN receiver, install the software provided here and enab
 | Beam, horizontal | omni-directional |
 | Beam, vertical | 10-15 degrees towards the horizon |
 | Receiver | RTLSDR, possibly with LNA and/or filter |
-| Noise Figure | 1dB (with LNA) 4dB (without LNA) |
+| Noise Figure | 1dB (with LNA) 4-10dB (without LNA) |
 | Timing accuracy | some miliseconds, to be possibly improved |
 | Demodulators | GFSK and LoRa, filtered envelope for the FRB |
 
