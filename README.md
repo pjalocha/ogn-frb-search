@@ -14,10 +14,12 @@ If you already have an OGN receiver, install the software provided here and enab
 | Element | Description/Remarks | est.price |
 |------|-----|----|
 | CPU | Raspberry PI 2, 3 or 4, 512MB RAM, case, power supply | 60 EUR |
-| RTLSDR | Silver stick from rtl-sdr.org | 27 USD |
+| RTLSDR | Silver stick with Bias-T from rtl-sdr.org | 27 USD |
 | Antenna | Collinear, 1-2m, 5-10dBi | 50-100 EUR |
 | LNA | Uputronics with Bias-T, not required, but highly recommended | 40 GBP |
 | antenna feeder | low-loss coax, less critical when LNA at the antenna | |
+
+Note: beware of silver sticks which look similar to those from rtl-sdr.org but exhibit internal noise issues: rather get the originals from the website.
 
 ## FRB reception
 
@@ -50,6 +52,9 @@ Fortunately, the OGN network has already few thousands of such, thus if we just 
 #### Sensitivity
 
 #### Timing accuracy
+OGN receivers have no GPS, the timestamp is based on the system time acquired with NTP.
+Another factor is the unknown delay between the RF going into the RTL2832U chip and the digitized data acquired by the API on the RPI side.
+For optimal performance it would be good to have total accuracy in the order of 1ms.
 
 ### Data processing for the FRB signal
 
