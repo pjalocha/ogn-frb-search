@@ -23,6 +23,11 @@ Note: beware of silver sticks which look similar to those from rtl-sdr.org but e
 
 ## FRB reception
 
+### What signal we expect
+
+A short, in the order of 1 milisecond pulse registered by several receivers within few miliseconds.
+Differences between receivers should be consistent with an arrival direction.
+
 ### OGN receiver characteristics
 
 | Characteristic | Value/description |
